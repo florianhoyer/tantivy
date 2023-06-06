@@ -115,6 +115,7 @@ failpoints = ["fail/failpoints"]
 unstable = [] # useful for benches.
 
 quickwit = ["sstable", "futures-util"]
+wasm = ["sstable", "futures-util", "zstd-compression", "zstd/wasm"]
 
 [workspace]
 members = ["query-grammar", "bitpacker", "common", "ownedbytes", "stacker", "sstable", "tokenizer-api", "columnar"]
